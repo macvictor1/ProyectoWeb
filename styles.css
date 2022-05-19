@@ -371,6 +371,9 @@ i:hover {
         width: 80%;
         padding: 15px 0px 0px 30px;
     }
+      .new__cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
