@@ -1,0 +1,560 @@
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    background-color: rgba(206, 204, 204, 0.801);
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Estilos al enlace de la lista del menu */
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Estilos al icono del menu*/
+
+.nav__ul-right a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* NAVIGATION */
+
+
+/* caja de navegación */
+
+.nav {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 20px 0;
+    background-color: #041e42;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 1px 4px black;
+}
+
+
+/* caja de navegación fin */
+
+
+/* imagen del nav */
+
+.nav-brand {
+    width: 70px;
+    padding-left: 10px;
+}
+
+
+/* PONER EL NAV LIST UNO AL LADO DEL OTRO */
+
+
+/* este es el contenedor del nav para usar flexbox */
+
+.nav .nav__ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* para separar un poco los elementos del menu */
+
+.nav .nav__ul .nav__li {
+    padding: 10px;
+}
+
+
+/* espaciado de la linea debajo de la lista item */
+
+.nav .nav__ul .nav__li a {
+    padding: 2px;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+
+/* hover de los enlaces */
+
+.nav .nav__ul .nav__li a:hover {
+    color: white;
+    opacity: 1;
+}
+
+
+/* para pegar la lista del nav al logo */
+
+.nav .nav__ul {
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+/* showcase o banner debajo del nav */
+
+hr {
+    margin: 6px 0px 4px 0px;
+}
+
+.showcase {
+    width: 100%;
+    background-image: url(imagenes/descarga.png);
+    height: 450px;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    box-shadow: 0px 1px 4px black;
+}
+
+.showcase h2 a {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.showcase h2 a:hover {
+    color: #fff;
+    opacity: .5;
+}
+
+.new__cards div p,
+.new__cards div h3,
+.new__cards div a {
+    color: #000;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+/* boton de read more */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    display: none;
+    z-index: 10;
+}
+
+
+/* texto del showcase o baner */
+
+.showcase h2,
+.showcase p {
+    margin-bottom: 10px;
+}
+
+.showcase .btn {
+    margin-top: 20px;
+}
+
+
+/* NEWS-CARDS */
+
+.new__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0px;
+}
+
+
+/* imagenes de cards */
+
+.new__cards img {
+    width: 100%;
+    height: 180px;
+}
+
+.new__cards h3 {
+    font-size: 20px;
+    margin: 0px 0px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 700;
+}
+
+.new__cards a {
+    padding: 10px 0px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.new__cards a:hover {
+    color: #17bcf8;
+}
+
+.new__cards a h3:hover {
+    color: #17bcf8;
+    text-align: center;
+}
+
+
+/* CARDS-BANER-ONE */
+
+.cards__banner-one {
+    width: 100%;
+    height: 500px;
+    background-image: url(imagenes/mlb_news/lfaacsnxiy9zaeym0qij.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+    box-shadow: 0px 1px 4px black;
+}
+
+.cards__banner-one .content {
+    width: 40%;
+    padding: 25px 0px 0px 30px;
+    color: #fff;
+}
+
+.cards__banner-one p,
+.cards__banner-one h2 {
+    margin: 10px 0px 20px 0px;
+}
+
+
+/* cards banner two */
+
+.cards__banner-two {
+    background-image: url(imagenes/mlb_news/-bn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 495px;
+    box-shadow: 0px 1px 4px black;
+}
+
+.cards__banner-two .content {
+    width: 50%;
+    padding: 25px 0px 0px 30px;
+}
+
+i:hover {
+    opacity: .4;
+    ;
+}
+
+
+/* SOCIAL */
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+
+/* FOOTER-LINKS */
+
+.footer-links {
+    background-color: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer__container ul {
+    margin: 0 auto;
+}
+
+.footer__container ul li {
+    line-height: 2.8;
+}
+
+
+/* copyright */
+
+.copyright {
+    background-color: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* 1024px */
+
+@media (max-width:1024px) {
+    .nav ul.nav__ul .nav__li {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .cards__banner-one .content {
+        width: 80%;
+        padding: 15px 0px 0px 30px;
+    }
+    .cards__banner-two .content {
+        width: 80%;
+        padding: 15px 0px 0px 30px;
+    }
+}
+
+
+/* 910px */
+
+@media (max-width:910px) {
+    .menu-btn {
+        display: block;
+        padding-right: 30px;
+    }
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+    .nav ul.nav__ul {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #041e42;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-500px);
+        transition: transform .5s ease-in-out;
+    }
+    .nav ul.nav__ul.show {
+        transform: translateX(-20px);
+    }
+    .nav ul.nav__ul .nav__li {
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+    .nav ul.nav__ul-right {
+        display: none;
+    }
+    .menu-btn {
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 45px;
+        /* display: none;*/
+        z-index: 10;
+    }
+    .nav ul.nav__ul .nav__li {
+        padding: 20px;
+        font-size: 18px;
+    }
+    .showcase {
+        width: 100%;
+        height: 300px;
+    }
+    .cards__banner-one .content {
+        width: 80%;
+        padding: 15px 0px 0px 30px;
+    }
+    .cards__banner-two .content {
+        width: 80%;
+        padding: 15px 0px 0px 30px;
+    }
+}
+
+
+/* 768px */
+
+@media (max-width:768px) {
+    .menu-btn {
+        display: block;
+        padding-right: 30px;
+    }
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+    .nav ul.nav__ul {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #041e42;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-500px);
+        transition: transform .5s ease-in-out;
+    }
+    .nav ul.nav__ul.show {
+        transform: translateX(-20px);
+    }
+    .nav ul.nav__ul .nav__li {
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 18px;
+    }
+    .nav ul.nav__ul-right {
+        display: none;
+    }
+    .new__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .cards__banner-one .content {
+        display: none;
+    }
+    .cards__banner-two .content {
+        width: 80%;
+        padding: 15px 0px 0px 30px;
+    }
+}
+
+.footer-links .footer__container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 35px;
+    /* display: none; */
+    z-index: 10;
+}
+
+.nav ul.nav__ul .nav__li {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.cards__banner-one {
+    width: 100%;
+    height: 280px;
+    background-image: url(imagenes/mlb_news/lfaacsnxiy9zaeym0qij.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+    box-shadow: 0px 1px 4px black;
+}
+
+.cards__banner-two {
+    background-image: url(imagenes/mlb_news/-bn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+    box-shadow: 0px 1px 4px black;
+}
+
+.new__cards div img {
+    height: 280px;
+}
+
+@media (max-width:500px) {
+    .menu-btn {
+        display: block;
+        padding-right: 30px;
+    }
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+    .new__cards {
+        grid-template-columns: 1fr;
+    }
+    .new__cards img {
+        height: 270px;
+    }
+    .cards__banner-one .content,
+    .cards__banner-two .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+    .footer-links .footer__container {
+        grid-template-columns: 1fr;
+    }
+    .menu-btn {
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 25px;
+        /* display: none; */
+        z-index: 10;
+    }
+    .nav ul.nav__ul .nav__li {
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+}
