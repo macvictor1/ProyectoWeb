@@ -371,15 +371,24 @@ i:hover {
         width: 80%;
         padding: 15px 0px 0px 30px;
     }
-      .new__cards {
-        grid-template-columns: 1fr 1fr;
-    }
+     .new__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0px;
+}
 }
 
 
 /* 910px */
 
 @media (max-width:910px) {
+    .new__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0px;
+}
     .menu-btn {
         display: block;
         padding-right: 30px;
